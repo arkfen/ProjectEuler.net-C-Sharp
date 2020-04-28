@@ -4,13 +4,13 @@ using System.Text;
 
 namespace ProjectEuler.net_C_Sharp
 {
-    class Problem3
+    class Problem3 : IProblem
     {
         private const long _Number = 600851475143;
 
 
 
-        public long GetResult()
+        public string GetResult()
         {
             int pairFactor = 2;
             long factor;
@@ -32,7 +32,7 @@ namespace ProjectEuler.net_C_Sharp
                 }
             }
             while (factor != 1);
-            return factor;
+            return factor.ToString();
         }
 
 

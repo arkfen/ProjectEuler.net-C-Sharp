@@ -4,14 +4,14 @@ using System.Text;
 
 namespace ProjectEuler.net_C_Sharp
 {
-    class Problem2
+    class Problem2 : IProblem
     {
         private const int _limit = 4000000;
 
         private int _fiboFather = 2;
         private int _fiboGrandpa = 1;
         
-        public int GetResult()
+        public string GetResult()
         {
             int fiboSon = _fiboFather;
             int sum = 0;
@@ -24,7 +24,7 @@ namespace ProjectEuler.net_C_Sharp
                 fiboSon = GetFiboSon();
                 ShiftFiboGeneration(fiboSon);
             }
-            return sum;
+            return sum.ToString();
         }
 
         private int GetFiboSon()

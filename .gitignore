@@ -1,6 +1,5 @@
 /.vs/
 /bin/
 /obj/
-/Tests/.vs/
-/Tests/bin/
-/Tests/obj/
+/Tests/ProjectEuler.net-C-Sharp.Tests/bin/
+/Tests/ProjectEuler.net-C-Sharp.Tests/obj/

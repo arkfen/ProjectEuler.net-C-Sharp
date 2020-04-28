@@ -4,13 +4,13 @@ using System.Text;
 
 namespace ProjectEuler.net_C_Sharp
 {
-    static class Problem1
+    class Problem1 : IProblem
     {
         /// <summary>
         /// Using same loop to itterate every multiple of 3 and 5 to get the summ of all of them... and subsctucting exrtra multiple of 15 (because it is a product of 3 and 5)
         /// </summary>
         /// <returns>Summ of all multiples of 3 and 5 up to 1000</returns>
-        public static int GetResult()
+        public string GetResult()
         {
             int sum = 0;
             int current3 = 3;
@@ -27,7 +27,7 @@ namespace ProjectEuler.net_C_Sharp
                 current5 += 5;
                 current15 += 15;
             }
-            return sum;
+            return sum.ToString();
         }
     }
 }
